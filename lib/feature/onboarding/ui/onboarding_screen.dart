@@ -20,7 +20,7 @@ class OnboardingScreen extends StatelessWidget {
           children: [
             SafeArea(
               bottom: false,
-              child: OnboardingHeader(onHelpPressed: () {}),
+              child:const OnboardingHeader(),
             ),
             Expanded(
               child: SingleChildScrollView(
