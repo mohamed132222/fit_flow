@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
+import 'language_dropdown.dart';
 
 class OnboardingHeader extends StatelessWidget {
-  const OnboardingHeader({super.key, required this.onHelpPressed});
+  const OnboardingHeader({super.key,});
 
-  final VoidCallback onHelpPressed;
 
   @override
   Widget build(BuildContext context) {
@@ -21,18 +21,7 @@ class OnboardingHeader extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text('FitFlow', style: AppStyles.font20Bold),
-
-          SizedBox(
-            width: 40,
-            height: 40,
-            child: IconButton(
-              onPressed: onHelpPressed,
-              iconSize: 22,
-              padding: EdgeInsets.zero,
-              color: AppColors.muted,
-              icon: const Icon(Icons.help_outline_rounded),
-            ),
-          ),
+          const LanguageDropdown(),
         ],
       ),
     );
