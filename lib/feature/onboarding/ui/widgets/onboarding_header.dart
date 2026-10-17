@@ -21,7 +21,7 @@ class OnboardingHeader extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Text('FitFlow', style: AppStyles.font20Bold),
-      
+
           SizedBox(
             width: 40,
             height: 40,
