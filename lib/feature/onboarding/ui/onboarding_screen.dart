@@ -7,24 +7,8 @@ import 'onboarding_content.dart';
 import 'widgets/onboarding_bottom_bar.dart';
 import 'widgets/onboarding_header.dart';
 
-class OnboardingScreen extends StatefulWidget {
+class OnboardingScreen extends StatelessWidget {
   const OnboardingScreen({super.key});
-
-  @override
-  State<OnboardingScreen> createState() => _OnboardingScreenState();
-}
-
-class _OnboardingScreenState extends State<OnboardingScreen> {
-  String _selectedGoalId = 'get_strong';
-  int _selectedDays = 3;
-
-  void _selectGoal(String goalId) {
-    setState(() => _selectedGoalId = goalId);
-  }
-
-  void _selectDays(int days) {
-    setState(() => _selectedDays = days);
-  }
 
   @override
   Widget build(BuildContext context) {
@@ -46,11 +30,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ),
                 child: OnboardingContent(
                   goals: goalOptions,
-                  selectedGoalId: _selectedGoalId,
-                  onGoalSelected: _selectGoal,
                   availabilityOptions: availabilityOptions,
-                  selectedDays: _selectedDays,
-                  onDaysSelected: _selectDays,
                 ),
               ),
             ),

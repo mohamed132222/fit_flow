@@ -4,18 +4,24 @@ import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
 import '../../data/models/availability_option.dart';
 import 'availability_option_tile.dart';
+import 'recommendation_card.dart';
 
-class WeeklyAvailabilitySection extends StatelessWidget {
-  const WeeklyAvailabilitySection({
-    super.key,
-    required this.options,
-    required this.selectedDays,
-    required this.onSelected,
-  });
+class WeeklyAvailabilitySection extends StatefulWidget {
+  const WeeklyAvailabilitySection({super.key, required this.options});
 
   final List<AvailabilityOption> options;
-  final int selectedDays;
-  final ValueChanged<int> onSelected;
+
+  @override
+  State<WeeklyAvailabilitySection> createState() =>
+      _WeeklyAvailabilitySectionState();
+}
+
+class _WeeklyAvailabilitySectionState extends State<WeeklyAvailabilitySection> {
+  int _selectedDays = 3;
+
+  void _selectDays(int days) {
+    setState(() => _selectedDays = days);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -33,17 +39,21 @@ class WeeklyAvailabilitySection extends StatelessWidget {
           ),
           child: Row(
             children: [
-              for (final option in options)
+              for (final option in widget.options)
                 Expanded(
                   child: AvailabilityOptionTile(
                     option: option,
-                    isSelected: option.days == selectedDays,
-                    onSelected: onSelected,
+                    isSelected: option.days == _selectedDays,
+                    onSelected: _selectDays,
                   ),
                 ),
             ],
           ),
         ),
+        if (_selectedDays == 3) ...[
+          const SizedBox(height: 32),
+          const RecommendationCard(),
+        ],
       ],
     );
   }
