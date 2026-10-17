@@ -39,14 +39,15 @@ class _WeeklyAvailabilitySectionState extends State<WeeklyAvailabilitySection> {
           ),
           child: Row(
             children: [
-              for (final option in widget.options)
-                Expanded(
+              ...widget.options.map(
+                (option) => Expanded(
                   child: AvailabilityOptionTile(
                     option: option,
                     isSelected: option.days == _selectedDays,
                     onSelected: _selectDays,
                   ),
                 ),
+              ),
             ],
           ),
         ),
