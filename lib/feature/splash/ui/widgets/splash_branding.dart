@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_styles.dart';
+import '../../../../i18n/strings.g.dart';
 
 class SplashBranding extends StatelessWidget {
   const SplashBranding({super.key});
@@ -10,13 +11,13 @@ class SplashBranding extends StatelessWidget {
     return Column(
       children: [
         Text(
-          'FitFlow',
+          t.appName,
           textAlign: TextAlign.center,
           style: AppStyles.font48Bold,
         ),
         const SizedBox(height: 8),
         Text(
-          'ELEVATE YOUR MOVEMENT',
+          t.splash.tagline,
           textAlign: TextAlign.center,
           style: AppStyles.font14Light,
         ),

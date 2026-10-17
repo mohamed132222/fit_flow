@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
 import '../../../../gen/assets.gen.dart';
+import '../../../../i18n/strings.g.dart';
 
 class RecommendationCard extends StatelessWidget {
   const RecommendationCard({super.key});
@@ -32,9 +33,9 @@ class RecommendationCard extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('RECOMMENDED', style: AppStyles.font10BoldPrimary),
+                Text(t.onboarding.recommended, style: AppStyles.font10BoldPrimary),
                 Text(
-                  'Optimal recovery cycle',
+                  t.onboarding.recoveryCycle,
                   style: AppStyles.font11MediumHint,
                 ),
               ],

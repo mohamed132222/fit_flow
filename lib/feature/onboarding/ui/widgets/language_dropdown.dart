@@ -1,24 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/localization/app_language.dart';
+import '../../../../core/localization/language_cubit.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
 
-class LanguageDropdown extends StatefulWidget {
+class LanguageDropdown extends StatelessWidget {
   const LanguageDropdown({super.key});
-
-  static const List<String> languages = ['English', 'Arabic'];
-
-  @override
-  State<LanguageDropdown> createState() => _LanguageDropdownState();
-}
-
-class _LanguageDropdownState extends State<LanguageDropdown> {
-  String _language = LanguageDropdown.languages.first;
 
   @override
   Widget build(BuildContext context) {
-    return DropdownButton<String>(
-      value: _language,
+    final language = context.watch<LanguageCubit>().state;
+
+    return DropdownButton<AppLanguage>(
+      value: language,
       underline: const SizedBox.shrink(),
       borderRadius: BorderRadius.circular(12),
       style: AppStyles.font13SemiBoldMuted,
@@ -28,12 +24,15 @@ class _LanguageDropdownState extends State<LanguageDropdown> {
         color: AppColors.muted,
       ),
       items: [
-        for (final language in LanguageDropdown.languages)
-          DropdownMenuItem(value: language, child: Text(language)),
+        for (final language in AppLanguage.values)
+          DropdownMenuItem(
+            value: language,
+            child: Text(language.nativeName),
+          ),
       ],
       onChanged: (value) {
         if (value == null) return;
-        setState(() => _language = value);
+        context.read<LanguageCubit>().changeLanguage(value);
       },
     );
   }

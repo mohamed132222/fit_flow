@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_styles.dart';
+import '../../../../i18n/strings.g.dart';
 
 class OnboardingIntro extends StatelessWidget {
   const OnboardingIntro({super.key});
@@ -10,10 +11,10 @@ class OnboardingIntro extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Select Your Goal', style: AppStyles.font34ExtraBold),
+        Text(t.onboarding.title, style: AppStyles.font34ExtraBold),
         const SizedBox(height: 8),
         Text(
-          'Customize your journey for precision\nperformance.',
+          t.onboarding.subtitle,
           style: AppStyles.font15Regular,
         ),
       ],

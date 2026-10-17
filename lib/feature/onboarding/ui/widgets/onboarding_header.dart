@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
+import '../../../../i18n/strings.g.dart';
 import 'language_dropdown.dart';
 
 class OnboardingHeader extends StatelessWidget {
@@ -20,7 +21,7 @@ class OnboardingHeader extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Text('FitFlow', style: AppStyles.font20Bold),
+          Text(t.appName, style: AppStyles.font20Bold),
           const LanguageDropdown(),
         ],
       ),

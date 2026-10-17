@@ -1,0 +1,3685 @@
+{
+  "version": 1,
+  "planLookup": {
+    "goal_build_muscle|days_2": "plan_build_muscle_2d",
+    "goal_build_muscle|days_3": "plan_build_muscle_3d",
+    "goal_build_muscle|days_4": "plan_build_muscle_4d",
+    "goal_build_muscle|days_5plus": "plan_build_muscle_5plus",
+    "goal_get_strong|days_2": "plan_get_strong_2d",
+    "goal_get_strong|days_3": "plan_get_strong_3d",
+    "goal_get_strong|days_4": "plan_get_strong_4d",
+    "goal_get_strong|days_5plus": "plan_get_strong_5plus",
+    "goal_general_fitness|days_2": "plan_general_fitness_2d",
+    "goal_general_fitness|days_3": "plan_general_fitness_3d",
+    "goal_general_fitness|days_4": "plan_general_fitness_4d",
+    "goal_general_fitness|days_5plus": "plan_general_fitness_5plus"
+  },
+  "plans": [
+    {
+      "id": "plan_build_muscle_2d",
+      "goalId": "goal_build_muscle",
+      "availabilityId": "days_2",
+      "daysPerWeek": 2,
+      "name": "Muscle Starter",
+      "level": "beginner",
+      "description": "Two efficient full-body sessions that hit every major muscle group with enough volume to keep building.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 2,
+      "avgSessionMinutes": 55,
+      "weeklyMinutes": 110,
+      "weeklyEstimatedKcal": 660,
+      "uniqueExerciseCount": 10,
+      "targetMuscles": [
+        "quads",
+        "glutes",
+        "chest",
+        "lats",
+        "mid back",
+        "side delts",
+        "abs",
+        "core",
+        "hamstrings",
+        "shoulders",
+        "biceps",
+        "triceps"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "TIME-EFFICIENT",
+        "caption": "Minimum effective dose",
+        "imageKey": "banner_muscle"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_2d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_2d_s2"
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_build_muscle_2d_s1",
+          "order": 1,
+          "name": "Full Body A",
+          "type": "strength",
+          "focus": [
+            "Quads",
+            "Chest",
+            "Back",
+            "Shoulders",
+            "Core"
+          ],
+          "durationMinutes": 55,
+          "estimatedKcal": 330,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_back_squat",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_db_bench_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_2d_s2",
+          "order": 2,
+          "name": "Full Body B",
+          "type": "strength",
+          "focus": [
+            "Hamstrings",
+            "Shoulders",
+            "Lats",
+            "Arms"
+          ],
+          "durationMinutes": 55,
+          "estimatedKcal": 330,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_romanian_deadlift",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_biceps_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_triceps_pushdown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_build_muscle_3d",
+      "goalId": "goal_build_muscle",
+      "availabilityId": "days_3",
+      "daysPerWeek": 3,
+      "name": "Push Pull Legs Basics",
+      "level": "beginner",
+      "description": "Classic push, pull and legs split for solid weekly frequency and plenty of recovery between sessions.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 3,
+      "avgSessionMinutes": 55,
+      "weeklyMinutes": 170,
+      "weeklyEstimatedKcal": 1020,
+      "uniqueExerciseCount": 15,
+      "targetMuscles": [
+        "upper chest",
+        "chest",
+        "shoulders",
+        "side delts",
+        "triceps",
+        "lats",
+        "mid back",
+        "rear delts",
+        "biceps",
+        "brachialis",
+        "quads",
+        "glutes",
+        "hamstrings",
+        "calves"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "BALANCED",
+        "caption": "Great frequency for beginners",
+        "imageKey": "banner_muscle"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_3d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_3d_s2"
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_3d_s3"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_build_muscle_3d_s1",
+          "order": 1,
+          "name": "Push Day",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Shoulders",
+            "Triceps"
+          ],
+          "durationMinutes": 55,
+          "estimatedKcal": 330,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_incline_db_press",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_db_bench_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_triceps_pushdown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_3d_s2",
+          "order": 2,
+          "name": "Pull Day",
+          "type": "strength",
+          "focus": [
+            "Back",
+            "Rear Delts",
+            "Biceps"
+          ],
+          "durationMinutes": 55,
+          "estimatedKcal": 330,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_barbell_row",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_face_pull",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_biceps_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_hammer_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_3d_s3",
+          "order": 3,
+          "name": "Leg Day",
+          "type": "strength",
+          "focus": [
+            "Quads",
+            "Hamstrings",
+            "Glutes",
+            "Calves"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_back_squat",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_romanian_deadlift",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_leg_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_calf_raise",
+              "sets": 4,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_build_muscle_4d",
+      "goalId": "goal_build_muscle",
+      "availabilityId": "days_4",
+      "daysPerWeek": 4,
+      "name": "Upper/Lower Hypertrophy",
+      "level": "intermediate",
+      "description": "Four days alternating upper and lower sessions, with heavier work early in the week and more volume late in the week.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 4,
+      "avgSessionMinutes": 60,
+      "weeklyMinutes": 245,
+      "weeklyEstimatedKcal": 1470,
+      "uniqueExerciseCount": 20,
+      "targetMuscles": [
+        "chest",
+        "lats",
+        "mid back",
+        "shoulders",
+        "biceps",
+        "triceps",
+        "quads",
+        "glutes",
+        "hamstrings",
+        "calves",
+        "upper chest",
+        "side delts",
+        "rear delts",
+        "brachialis",
+        "abs",
+        "core"
+      ],
+      "banner": {
+        "isRecommended": true,
+        "badge": "RECOMMENDED",
+        "caption": "Optimal recovery cycle",
+        "imageKey": "banner_muscle"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_4d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_4d_s2"
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_4d_s3"
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_4d_s4"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_build_muscle_4d_s1",
+          "order": 1,
+          "name": "Upper Body A",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Back",
+            "Shoulders",
+            "Arms"
+          ],
+          "durationMinutes": 65,
+          "estimatedKcal": 390,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_barbell_bench_press",
+              "sets": 4,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_barbell_row",
+              "sets": 4,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_biceps_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_triceps_pushdown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_4d_s2",
+          "order": 2,
+          "name": "Lower Body A",
+          "type": "strength",
+          "focus": [
+            "Quads",
+            "Hamstrings",
+            "Calves"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_back_squat",
+              "sets": 4,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 150
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_romanian_deadlift",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_leg_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_calf_raise",
+              "sets": 4,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_4d_s3",
+          "order": 3,
+          "name": "Upper Body B",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Back",
+            "Shoulders",
+            "Arms"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_incline_db_press",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 4,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_cable_fly",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_face_pull",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_hammer_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_4d_s4",
+          "order": 4,
+          "name": "Lower Body B",
+          "type": "strength",
+          "focus": [
+            "Glutes",
+            "Quads",
+            "Hamstrings",
+            "Core"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_hip_thrust",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_press",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_leg_curl",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_calf_raise",
+              "sets": 4,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 45,
+              "restSeconds": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_build_muscle_5plus",
+      "goalId": "goal_build_muscle",
+      "availabilityId": "days_5plus",
+      "daysPerWeek": 5,
+      "name": "5-Day Muscle Builder",
+      "level": "intermediate",
+      "description": "Push, pull and legs followed by an upper and lower day for maximum weekly volume per muscle group.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 5,
+      "avgSessionMinutes": 60,
+      "weeklyMinutes": 290,
+      "weeklyEstimatedKcal": 1740,
+      "uniqueExerciseCount": 20,
+      "targetMuscles": [
+        "upper chest",
+        "chest",
+        "shoulders",
+        "side delts",
+        "triceps",
+        "lats",
+        "mid back",
+        "rear delts",
+        "biceps",
+        "brachialis",
+        "quads",
+        "glutes",
+        "hamstrings",
+        "calves",
+        "abs",
+        "core"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "ADVANCED",
+        "caption": "High volume for faster progress",
+        "imageKey": "banner_muscle"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_5plus_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_5plus_s2"
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_5plus_s3"
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_5plus_s4"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": true,
+          "sessionId": "plan_build_muscle_5plus_s5"
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_build_muscle_5plus_s1",
+          "order": 1,
+          "name": "Push Day",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Shoulders",
+            "Triceps"
+          ],
+          "durationMinutes": 55,
+          "estimatedKcal": 330,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_incline_db_press",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_db_bench_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_triceps_pushdown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_5plus_s2",
+          "order": 2,
+          "name": "Pull Day",
+          "type": "strength",
+          "focus": [
+            "Back",
+            "Rear Delts",
+            "Biceps"
+          ],
+          "durationMinutes": 55,
+          "estimatedKcal": 330,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_barbell_row",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_face_pull",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_biceps_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_hammer_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_5plus_s3",
+          "order": 3,
+          "name": "Leg Day",
+          "type": "strength",
+          "focus": [
+            "Quads",
+            "Hamstrings",
+            "Glutes",
+            "Calves"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_back_squat",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_romanian_deadlift",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_leg_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_calf_raise",
+              "sets": 4,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_5plus_s4",
+          "order": 4,
+          "name": "Upper Body B",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Back",
+            "Shoulders",
+            "Arms"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_incline_db_press",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 4,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_cable_fly",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_face_pull",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_hammer_curl",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_build_muscle_5plus_s5",
+          "order": 5,
+          "name": "Lower Body B",
+          "type": "strength",
+          "focus": [
+            "Glutes",
+            "Quads",
+            "Hamstrings",
+            "Core"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_hip_thrust",
+              "sets": 4,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_press",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_leg_curl",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_calf_raise",
+              "sets": 4,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 45,
+              "restSeconds": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_get_strong_2d",
+      "goalId": "goal_get_strong",
+      "availabilityId": "days_2",
+      "daysPerWeek": 2,
+      "name": "Strength Essentials",
+      "level": "beginner",
+      "description": "Two heavy full-body days built around the squat, bench, deadlift and overhead press.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 2,
+      "avgSessionMinutes": 60,
+      "weeklyMinutes": 120,
+      "weeklyEstimatedKcal": 720,
+      "uniqueExerciseCount": 8,
+      "targetMuscles": [
+        "quads",
+        "glutes",
+        "chest",
+        "lats",
+        "mid back",
+        "abs",
+        "core",
+        "hamstrings",
+        "lower back",
+        "shoulders",
+        "forearms",
+        "traps"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "TIME-EFFICIENT",
+        "caption": "Low volume, heavy focus",
+        "imageKey": "banner_strong"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_2d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_2d_s2"
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_get_strong_2d_s1",
+          "order": 1,
+          "name": "Full Body Strength A",
+          "type": "strength",
+          "focus": [
+            "Squat",
+            "Bench",
+            "Row",
+            "Core"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_back_squat",
+              "sets": 5,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_barbell_bench_press",
+              "sets": 5,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_barbell_row",
+              "sets": 4,
+              "repsMin": 5,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 45,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_2d_s2",
+          "order": 2,
+          "name": "Full Body Strength B",
+          "type": "strength",
+          "focus": [
+            "Deadlift",
+            "Press",
+            "Pull",
+            "Grip"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_deadlift",
+              "sets": 4,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_overhead_press",
+              "sets": 4,
+              "repsMin": 4,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 150
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_pull_up",
+              "sets": 4,
+              "repsMin": 4,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_farmers_carry",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_get_strong_3d",
+      "goalId": "goal_get_strong",
+      "availabilityId": "days_3",
+      "daysPerWeek": 3,
+      "name": "Strength Foundation",
+      "level": "beginner",
+      "description": "An upper day to groove technique, then lower-body power and a full-body strength day.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 3,
+      "avgSessionMinutes": 55,
+      "weeklyMinutes": 165,
+      "weeklyEstimatedKcal": 990,
+      "uniqueExerciseCount": 13,
+      "targetMuscles": [
+        "chest",
+        "lats",
+        "mid back",
+        "shoulders",
+        "side delts",
+        "quads",
+        "glutes",
+        "hamstrings",
+        "calves",
+        "abs",
+        "core",
+        "lower back",
+        "forearms",
+        "traps"
+      ],
+      "banner": {
+        "isRecommended": true,
+        "badge": "RECOMMENDED",
+        "caption": "Optimal recovery cycle",
+        "imageKey": "banner_strong"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_3d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_3d_s2"
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_3d_s3"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_get_strong_3d_s1",
+          "order": 1,
+          "name": "Upper Body Basics",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Back",
+            "Shoulders"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_db_bench_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_3d_s2",
+          "order": 2,
+          "name": "Lower Body Power",
+          "type": "strength",
+          "focus": [
+            "Quads",
+            "Hamstrings",
+            "Glutes",
+            "Core"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_back_squat",
+              "sets": 5,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_romanian_deadlift",
+              "sets": 4,
+              "repsMin": 5,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 150
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_calf_raise",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 45,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_3d_s3",
+          "order": 3,
+          "name": "Full Body Strength",
+          "type": "strength",
+          "focus": [
+            "Deadlift",
+            "Bench",
+            "Pull",
+            "Grip"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_deadlift",
+              "sets": 4,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_barbell_bench_press",
+              "sets": 4,
+              "repsMin": 4,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 150
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_pull_up",
+              "sets": 3,
+              "repsMin": 5,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_farmers_carry",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 60
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_get_strong_4d",
+      "goalId": "goal_get_strong",
+      "availabilityId": "days_4",
+      "daysPerWeek": 4,
+      "name": "Upper/Lower Strength",
+      "level": "intermediate",
+      "description": "Heavy upper and lower days early in the week with a volume session for each later on.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 4,
+      "avgSessionMinutes": 60,
+      "weeklyMinutes": 235,
+      "weeklyEstimatedKcal": 1410,
+      "uniqueExerciseCount": 15,
+      "targetMuscles": [
+        "chest",
+        "lats",
+        "mid back",
+        "shoulders",
+        "quads",
+        "glutes",
+        "hamstrings",
+        "calves",
+        "upper chest",
+        "rear delts",
+        "lower back",
+        "abs",
+        "core"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "HIGH VOLUME",
+        "caption": "More practice on every big lift",
+        "imageKey": "banner_strong"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_4d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_4d_s2"
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_4d_s3"
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_4d_s4"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_get_strong_4d_s1",
+          "order": 1,
+          "name": "Upper Strength",
+          "type": "strength",
+          "focus": [
+            "Bench",
+            "Row",
+            "Press",
+            "Pull"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_barbell_bench_press",
+              "sets": 5,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_barbell_row",
+              "sets": 4,
+              "repsMin": 5,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 5,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 150
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_pull_up",
+              "sets": 3,
+              "repsMin": 5,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_4d_s2",
+          "order": 2,
+          "name": "Lower Strength",
+          "type": "strength",
+          "focus": [
+            "Squat",
+            "Hinge",
+            "Calves"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_back_squat",
+              "sets": 5,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_romanian_deadlift",
+              "sets": 3,
+              "repsMin": 5,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 150
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_calf_raise",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_4d_s3",
+          "order": 3,
+          "name": "Upper Volume",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Lats",
+            "Shoulders",
+            "Rear Delts"
+          ],
+          "durationMinutes": 55,
+          "estimatedKcal": 330,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_incline_db_press",
+              "sets": 4,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 4,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_overhead_press",
+              "sets": 4,
+              "repsMin": 4,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 150
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_face_pull",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_4d_s4",
+          "order": 4,
+          "name": "Lower Volume",
+          "type": "strength",
+          "focus": [
+            "Deadlift",
+            "Glutes",
+            "Hamstrings",
+            "Core"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_deadlift",
+              "sets": 4,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_hip_thrust",
+              "sets": 4,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_curl",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 45,
+              "restSeconds": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_get_strong_5plus",
+      "goalId": "goal_get_strong",
+      "availabilityId": "days_5plus",
+      "daysPerWeek": 5,
+      "name": "Powerbuilder 5",
+      "level": "intermediate",
+      "description": "One session per main lift plus an accessory day: squat, bench, deadlift and overhead press each get their own focus.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 5,
+      "avgSessionMinutes": 55,
+      "weeklyMinutes": 280,
+      "weeklyEstimatedKcal": 1680,
+      "uniqueExerciseCount": 19,
+      "targetMuscles": [
+        "quads",
+        "glutes",
+        "hamstrings",
+        "abs",
+        "core",
+        "chest",
+        "lats",
+        "mid back",
+        "upper chest",
+        "triceps",
+        "lower back",
+        "forearms",
+        "traps",
+        "shoulders",
+        "side delts",
+        "rear delts",
+        "biceps"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "ADVANCED",
+        "caption": "Max frequency for every lift",
+        "imageKey": "banner_strong"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_5plus_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_5plus_s2"
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_5plus_s3"
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_5plus_s4"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": true,
+          "sessionId": "plan_get_strong_5plus_s5"
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_get_strong_5plus_s1",
+          "order": 1,
+          "name": "Squat Focus",
+          "type": "strength",
+          "focus": [
+            "Quads",
+            "Glutes",
+            "Hamstrings",
+            "Core"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_back_squat",
+              "sets": 5,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_leg_press",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_leg_curl",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 45,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_5plus_s2",
+          "order": 2,
+          "name": "Bench Focus",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Back",
+            "Triceps"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_barbell_bench_press",
+              "sets": 5,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 180
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_barbell_row",
+              "sets": 4,
+              "repsMin": 5,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_incline_db_press",
+              "sets": 3,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_triceps_pushdown",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 75
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_5plus_s3",
+          "order": 3,
+          "name": "Deadlift Focus",
+          "type": "strength",
+          "focus": [
+            "Posterior Chain",
+            "Glutes",
+            "Lats",
+            "Grip"
+          ],
+          "durationMinutes": 60,
+          "estimatedKcal": 360,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_deadlift",
+              "sets": 5,
+              "repsMin": 2,
+              "repsMax": 4,
+              "durationSeconds": null,
+              "restSeconds": 210
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_hip_thrust",
+              "sets": 3,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_pull_up",
+              "sets": 4,
+              "repsMin": 5,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_farmers_carry",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_5plus_s4",
+          "order": 4,
+          "name": "Overhead Press Focus",
+          "type": "strength",
+          "focus": [
+            "Shoulders",
+            "Lats",
+            "Rear Delts"
+          ],
+          "durationMinutes": 55,
+          "estimatedKcal": 330,
+          "exerciseCount": 4,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_overhead_press",
+              "sets": 5,
+              "repsMin": 3,
+              "repsMax": 5,
+              "durationSeconds": null,
+              "restSeconds": 150
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 4,
+              "repsMin": 6,
+              "repsMax": 8,
+              "durationSeconds": null,
+              "restSeconds": 120
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_face_pull",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            }
+          ]
+        },
+        {
+          "id": "plan_get_strong_5plus_s5",
+          "order": 5,
+          "name": "Accessory & Core",
+          "type": "strength",
+          "focus": [
+            "Legs",
+            "Back",
+            "Arms",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 90
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_biceps_curl",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_triceps_pushdown",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 60,
+              "restSeconds": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_general_fitness_2d",
+      "goalId": "goal_general_fitness",
+      "availabilityId": "days_2",
+      "daysPerWeek": 2,
+      "name": "Fit Start",
+      "level": "beginner",
+      "description": "Two balanced full-body sessions to build a sustainable habit and a base of strength and fitness.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 2,
+      "avgSessionMinutes": 45,
+      "weeklyMinutes": 90,
+      "weeklyEstimatedKcal": 540,
+      "uniqueExerciseCount": 10,
+      "targetMuscles": [
+        "quads",
+        "glutes",
+        "chest",
+        "lats",
+        "mid back",
+        "abs",
+        "core",
+        "hamstrings",
+        "shoulders",
+        "deep core"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "TIME-EFFICIENT",
+        "caption": "Easy to stick with",
+        "imageKey": "banner_fitness"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_2d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_2d_s2"
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_general_fitness_2d_s1",
+          "order": 1,
+          "name": "Full Body A",
+          "type": "strength",
+          "focus": [
+            "Legs",
+            "Chest",
+            "Back",
+            "Glutes",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_goblet_squat",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_push_up",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_glute_bridge",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 30,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_2d_s2",
+          "order": 2,
+          "name": "Full Body B",
+          "type": "strength",
+          "focus": [
+            "Hips",
+            "Shoulders",
+            "Lats",
+            "Legs",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_kettlebell_swing",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_dead_bug",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_general_fitness_3d",
+      "goalId": "goal_general_fitness",
+      "availabilityId": "days_3",
+      "daysPerWeek": 3,
+      "name": "Balanced Fitness",
+      "level": "beginner",
+      "description": "Two full-body strength days with a conditioning circuit in between for all-round health.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 3,
+      "avgSessionMinutes": 40,
+      "weeklyMinutes": 125,
+      "weeklyEstimatedKcal": 820,
+      "uniqueExerciseCount": 11,
+      "targetMuscles": [
+        "quads",
+        "glutes",
+        "chest",
+        "lats",
+        "mid back",
+        "abs",
+        "core",
+        "hamstrings",
+        "forearms",
+        "traps",
+        "shoulders",
+        "deep core"
+      ],
+      "banner": {
+        "isRecommended": true,
+        "badge": "RECOMMENDED",
+        "caption": "Balanced strength and cardio",
+        "imageKey": "banner_fitness"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_3d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_3d_s2"
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_3d_s3"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_general_fitness_3d_s1",
+          "order": 1,
+          "name": "Full Body A",
+          "type": "strength",
+          "focus": [
+            "Legs",
+            "Chest",
+            "Back",
+            "Glutes",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_goblet_squat",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_push_up",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_glute_bridge",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 30,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_3d_s2",
+          "order": 2,
+          "name": "Conditioning Circuit",
+          "type": "conditioning",
+          "focus": [
+            "Full Body",
+            "Cardio",
+            "Core"
+          ],
+          "durationMinutes": 35,
+          "estimatedKcal": 280,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_kettlebell_swing",
+              "sets": 4,
+              "repsMin": 15,
+              "repsMax": 20,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_push_up",
+              "sets": 4,
+              "repsMin": 10,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 16,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_farmers_carry",
+              "sets": 4,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 30
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 30
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_3d_s3",
+          "order": 3,
+          "name": "Full Body B",
+          "type": "strength",
+          "focus": [
+            "Hips",
+            "Shoulders",
+            "Lats",
+            "Legs",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_kettlebell_swing",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_dead_bug",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_general_fitness_4d",
+      "goalId": "goal_general_fitness",
+      "availabilityId": "days_4",
+      "daysPerWeek": 4,
+      "name": "Active Fitness Split",
+      "level": "intermediate",
+      "description": "Upper and lower strength days plus a conditioning circuit and a full-body session.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 4,
+      "avgSessionMinutes": 40,
+      "weeklyMinutes": 170,
+      "weeklyEstimatedKcal": 1090,
+      "uniqueExerciseCount": 17,
+      "targetMuscles": [
+        "chest",
+        "lats",
+        "mid back",
+        "shoulders",
+        "side delts",
+        "biceps",
+        "triceps",
+        "quads",
+        "glutes",
+        "hamstrings",
+        "calves",
+        "abs",
+        "deep core",
+        "forearms",
+        "traps",
+        "core"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "HIGH VOLUME",
+        "caption": "Extra conditioning work",
+        "imageKey": "banner_fitness"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_4d_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_4d_s2"
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_4d_s3"
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_4d_s4"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_general_fitness_4d_s1",
+          "order": 1,
+          "name": "Upper Body Tone",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Back",
+            "Shoulders",
+            "Arms"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_db_bench_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_biceps_curl",
+              "sets": 2,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_triceps_pushdown",
+              "sets": 2,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_4d_s2",
+          "order": 2,
+          "name": "Lower Body & Core",
+          "type": "strength",
+          "focus": [
+            "Quads",
+            "Hamstrings",
+            "Glutes",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_goblet_squat",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_romanian_deadlift",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_glute_bridge",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_calf_raise",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_dead_bug",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_4d_s3",
+          "order": 3,
+          "name": "Conditioning Circuit",
+          "type": "conditioning",
+          "focus": [
+            "Full Body",
+            "Cardio",
+            "Core"
+          ],
+          "durationMinutes": 35,
+          "estimatedKcal": 280,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_kettlebell_swing",
+              "sets": 4,
+              "repsMin": 15,
+              "repsMax": 20,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_push_up",
+              "sets": 4,
+              "repsMin": 10,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 16,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_farmers_carry",
+              "sets": 4,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 30
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 30
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_4d_s4",
+          "order": 4,
+          "name": "Full Body B",
+          "type": "strength",
+          "focus": [
+            "Hips",
+            "Shoulders",
+            "Lats",
+            "Legs",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_kettlebell_swing",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_dead_bug",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plan_general_fitness_5plus",
+      "goalId": "goal_general_fitness",
+      "availabilityId": "days_5plus",
+      "daysPerWeek": 5,
+      "name": "All-Round Fitness",
+      "level": "intermediate",
+      "description": "A full week mixing strength, conditioning and a dedicated mobility reset day.",
+      "durationWeeks": 8,
+      "sessionsPerWeek": 5,
+      "avgSessionMinutes": 40,
+      "weeklyMinutes": 200,
+      "weeklyEstimatedKcal": 1195,
+      "uniqueExerciseCount": 19,
+      "targetMuscles": [
+        "chest",
+        "lats",
+        "mid back",
+        "shoulders",
+        "side delts",
+        "biceps",
+        "triceps",
+        "quads",
+        "glutes",
+        "hamstrings",
+        "calves",
+        "abs",
+        "deep core",
+        "hips",
+        "thoracic spine",
+        "spine",
+        "core",
+        "forearms",
+        "traps"
+      ],
+      "banner": {
+        "isRecommended": false,
+        "badge": "ADVANCED",
+        "caption": "Active lifestyle plan",
+        "imageKey": "banner_fitness"
+      },
+      "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
+      "schedule": [
+        {
+          "dayOfWeek": 1,
+          "dayKey": "mon",
+          "dayLabel": "M",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_5plus_s1"
+        },
+        {
+          "dayOfWeek": 2,
+          "dayKey": "tue",
+          "dayLabel": "T",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_5plus_s2"
+        },
+        {
+          "dayOfWeek": 3,
+          "dayKey": "wed",
+          "dayLabel": "W",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_5plus_s3"
+        },
+        {
+          "dayOfWeek": 4,
+          "dayKey": "thu",
+          "dayLabel": "T",
+          "isTrainingDay": false,
+          "sessionId": null
+        },
+        {
+          "dayOfWeek": 5,
+          "dayKey": "fri",
+          "dayLabel": "F",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_5plus_s4"
+        },
+        {
+          "dayOfWeek": 6,
+          "dayKey": "sat",
+          "dayLabel": "S",
+          "isTrainingDay": true,
+          "sessionId": "plan_general_fitness_5plus_s5"
+        },
+        {
+          "dayOfWeek": 7,
+          "dayKey": "sun",
+          "dayLabel": "S",
+          "isTrainingDay": false,
+          "sessionId": null
+        }
+      ],
+      "sessions": [
+        {
+          "id": "plan_general_fitness_5plus_s1",
+          "order": 1,
+          "name": "Upper Body Tone",
+          "type": "strength",
+          "focus": [
+            "Chest",
+            "Back",
+            "Shoulders",
+            "Arms"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_db_bench_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_seated_cable_row",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_lateral_raise",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_biceps_curl",
+              "sets": 2,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_triceps_pushdown",
+              "sets": 2,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_5plus_s2",
+          "order": 2,
+          "name": "Lower Body & Core",
+          "type": "strength",
+          "focus": [
+            "Quads",
+            "Hamstrings",
+            "Glutes",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 6,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_goblet_squat",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_romanian_deadlift",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 75
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_glute_bridge",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_calf_raise",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 45
+            },
+            {
+              "order": 6,
+              "exerciseId": "ex_dead_bug",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_5plus_s3",
+          "order": 3,
+          "name": "Mobility & Core Reset",
+          "type": "recovery",
+          "focus": [
+            "Hips",
+            "Spine",
+            "Core"
+          ],
+          "durationMinutes": 30,
+          "estimatedKcal": 105,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_worlds_greatest_stretch",
+              "sets": 2,
+              "repsMin": 5,
+              "repsMax": 6,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_cat_cow",
+              "sets": 2,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 20
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_dead_bug",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_glute_bridge",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 30,
+              "restSeconds": 30
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_5plus_s4",
+          "order": 4,
+          "name": "Full Body B",
+          "type": "strength",
+          "focus": [
+            "Hips",
+            "Shoulders",
+            "Lats",
+            "Legs",
+            "Core"
+          ],
+          "durationMinutes": 45,
+          "estimatedKcal": 270,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_kettlebell_swing",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_overhead_press",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_lat_pulldown",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 10,
+              "repsMax": 12,
+              "durationSeconds": null,
+              "restSeconds": 60
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_dead_bug",
+              "sets": 3,
+              "repsMin": 8,
+              "repsMax": 10,
+              "durationSeconds": null,
+              "restSeconds": 45
+            }
+          ]
+        },
+        {
+          "id": "plan_general_fitness_5plus_s5",
+          "order": 5,
+          "name": "Conditioning Circuit",
+          "type": "conditioning",
+          "focus": [
+            "Full Body",
+            "Cardio",
+            "Core"
+          ],
+          "durationMinutes": 35,
+          "estimatedKcal": 280,
+          "exerciseCount": 5,
+          "exercises": [
+            {
+              "order": 1,
+              "exerciseId": "ex_kettlebell_swing",
+              "sets": 4,
+              "repsMin": 15,
+              "repsMax": 20,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 2,
+              "exerciseId": "ex_push_up",
+              "sets": 4,
+              "repsMin": 10,
+              "repsMax": 15,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 3,
+              "exerciseId": "ex_walking_lunge",
+              "sets": 3,
+              "repsMin": 12,
+              "repsMax": 16,
+              "durationSeconds": null,
+              "restSeconds": 30
+            },
+            {
+              "order": 4,
+              "exerciseId": "ex_farmers_carry",
+              "sets": 4,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 30
+            },
+            {
+              "order": 5,
+              "exerciseId": "ex_plank",
+              "sets": 3,
+              "repsMin": null,
+              "repsMax": null,
+              "durationSeconds": 40,
+              "restSeconds": 30
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

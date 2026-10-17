@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
+import '../../../../i18n/strings.g.dart';
 
 class OnboardingBottomBar extends StatelessWidget {
   const OnboardingBottomBar({super.key, required this.onContinue});
@@ -31,7 +32,7 @@ class OnboardingBottomBar extends StatelessWidget {
               child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text('Continue', style: AppStyles.font17Bold),
+                  Text(t.onboarding.continueButton, style: AppStyles.font17Bold),
                   const SizedBox(width: 8),
                   const Icon(
                     Icons.arrow_forward_rounded,
@@ -43,7 +44,7 @@ class OnboardingBottomBar extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 16),
-          Text('YOU CAN CHANGE THIS LATER', style: AppStyles.font10BoldMuted),
+          Text(t.onboarding.canChangeLater, style: AppStyles.font10BoldMuted),
         ],
       ),
     );

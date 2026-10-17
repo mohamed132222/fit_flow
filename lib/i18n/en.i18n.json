@@ -1,0 +1,39 @@
+{
+  "appName": "FitFlow",
+  "language": {
+    "title": "Language",
+    "select": "Select language"
+  },
+  "splash": {
+    "tagline": "ELEVATE YOUR MOVEMENT"
+  },
+  "onboarding": {
+    "title": "Select Your Goal",
+    "subtitle": "Customize your journey for precision\nperformance.",
+    "weeklyAvailability": "Weekly Availability",
+    "recommended": "RECOMMENDED",
+    "recoveryCycle": "Optimal recovery cycle",
+    "continueButton": "Continue",
+    "canChangeLater": "YOU CAN CHANGE THIS LATER",
+    "goals": {
+      "buildMuscle": {
+        "title": "Build Muscle",
+        "description": "Focus on hypertrophy and\nstrength."
+      },
+      "getStrong": {
+        "title": "Get Strong",
+        "description": "Prioritize heavy lifting and power."
+      },
+      "generalFitness": {
+        "title": "General Fitness",
+        "description": "Balanced health and mobility."
+      }
+    },
+    "availability": {
+      "days2": "2 Days",
+      "days3": "3 Days",
+      "days4": "4 Days",
+      "days5plus": "5+ Days"
+    }
+  }
+}

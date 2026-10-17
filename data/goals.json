@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "selectGoalScreen": {
+    "title": "Select Your Goal",
+    "subtitle": "Customize your journey for precision performance.",
+    "availabilityTitle": "Weekly Availability",
+    "ctaLabel": "Continue",
+    "footnote": "YOU CAN CHANGE THIS LATER IN PROFILE",
+    "defaultGoalId": "goal_get_strong",
+    "defaultAvailabilityId": "days_3"
+  },
+  "goals": [
+    {
+      "id": "goal_build_muscle",
+      "order": 1,
+      "title": "Build Muscle",
+      "description": "Focus on hypertrophy and strength.",
+      "icon": "fitness_center",
+      "typicalRepRange": "6-15",
+      "typicalRestSeconds": [
+        60,
+        120
+      ],
+      "intensity": "moderate-high",
+      "focusAreas": [
+        "hypertrophy",
+        "muscle volume",
+        "balanced physique"
+      ],
+      "trainingStyle": "Moderate loads, controlled tempo and higher weekly volume per muscle group."
+    },
+    {
+      "id": "goal_get_strong",
+      "order": 2,
+      "title": "Get Strong",
+      "description": "Prioritize heavy lifting and power.",
+      "icon": "weight",
+      "typicalRepRange": "3-8",
+      "typicalRestSeconds": [
+        120,
+        210
+      ],
+      "intensity": "high",
+      "focusAreas": [
+        "max strength",
+        "compound lifts",
+        "power"
+      ],
+      "trainingStyle": "Heavy compound lifts at low reps with long rests, plus lighter accessory work."
+    },
+    {
+      "id": "goal_general_fitness",
+      "order": 3,
+      "title": "General Fitness",
+      "description": "Balanced health and mobility.",
+      "icon": "directions_run",
+      "typicalRepRange": "8-20",
+      "typicalRestSeconds": [
+        30,
+        75
+      ],
+      "intensity": "low-moderate",
+      "focusAreas": [
+        "overall health",
+        "conditioning",
+        "mobility"
+      ],
+      "trainingStyle": "A mix of strength, conditioning and mobility at manageable intensity."
+    }
+  ],
+  "availabilityOptions": [
+    {
+      "id": "days_2",
+      "order": 1,
+      "label": "2 Days",
+      "daysPerWeek": 2
+    },
+    {
+      "id": "days_3",
+      "order": 2,
+      "label": "3 Days",
+      "daysPerWeek": 3
+    },
+    {
+      "id": "days_4",
+      "order": 3,
+      "label": "4 Days",
+      "daysPerWeek": 4
+    },
+    {
+      "id": "days_5plus",
+      "order": 4,
+      "label": "5+ Days",
+      "daysPerWeek": 5
+    }
+  ]
+}

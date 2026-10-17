@@ -1,0 +1,39 @@
+{
+  "appName": "FitFlow",
+  "language": {
+    "title": "اللغة",
+    "select": "اختر اللغة"
+  },
+  "splash": {
+    "tagline": "ارتقِ بحركتك"
+  },
+  "onboarding": {
+    "title": "اختر هدفك",
+    "subtitle": "خصّص رحلتك لأداءٍ دقيق ومتميّز.",
+    "weeklyAvailability": "التوفر الأسبوعي",
+    "recommended": "موصى به",
+    "recoveryCycle": "دورة تعافٍ مثالية",
+    "continueButton": "متابعة",
+    "canChangeLater": "يمكنك تغيير هذا لاحقًا",
+    "goals": {
+      "buildMuscle": {
+        "title": "بناء العضلات",
+        "description": "ركّز على تضخيم العضلات والقوة."
+      },
+      "getStrong": {
+        "title": "زيادة القوة",
+        "description": "أعطِ الأولوية لرفع الأثقال والقوة."
+      },
+      "generalFitness": {
+        "title": "اللياقة العامة",
+        "description": "صحة وتوازن ومرونة."
+      }
+    },
+    "availability": {
+      "days2": "يومان",
+      "days3": "٣ أيام",
+      "days4": "٤ أيام",
+      "days5plus": "٥+ أيام"
+    }
+  }
+}

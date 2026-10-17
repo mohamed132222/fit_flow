@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
+import '../../../../i18n/strings.g.dart';
 import '../../data/models/availability_option.dart';
 import 'availability_option_tile.dart';
 import 'recommendation_card.dart';
@@ -28,7 +29,7 @@ class _WeeklyAvailabilitySectionState extends State<WeeklyAvailabilitySection> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text('Weekly Availability', style: AppStyles.font18Bold),
+        Text(t.onboarding.weeklyAvailability, style: AppStyles.font18Bold),
         const SizedBox(height: 16),
         Container(
           padding: const EdgeInsets.all(4),

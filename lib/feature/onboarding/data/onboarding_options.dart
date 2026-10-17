@@ -1,31 +1,44 @@
 import '../../../gen/assets.gen.dart';
+import '../../../i18n/strings.g.dart';
 import 'models/availability_option.dart';
 import 'models/goal_option.dart';
 
-final goalOptions = [
+List<GoalOption> get goalOptions => [
   GoalOption(
     id: 'build_muscle',
-    title: 'Build Muscle',
-    description: 'Focus on hypertrophy and\nstrength.',
+    title: t.onboarding.goals.buildMuscle.title,
+    description: t.onboarding.goals.buildMuscle.description,
     icon: Assets.images.muscles,
   ),
   GoalOption(
     id: 'get_strong',
-    title: 'Get Strong',
-    description: 'Prioritize heavy lifting and power.',
+    title: t.onboarding.goals.getStrong.title,
+    description: t.onboarding.goals.getStrong.description,
     icon: Assets.images.bag,
   ),
   GoalOption(
     id: 'general_fitness',
-    title: 'General Fitness',
-    description: 'Balanced health and mobility.',
+    title: t.onboarding.goals.generalFitness.title,
+    description: t.onboarding.goals.generalFitness.description,
     icon: Assets.images.fitness,
   ),
 ];
 
-const availabilityOptions = [
-  AvailabilityOption(days: 2, label: '2 Days'),
-  AvailabilityOption(days: 3, label: '3 Days'),
-  AvailabilityOption(days: 4, label: '4 Days'),
-  AvailabilityOption(days: 5, label: '5+ Days'),
+List<AvailabilityOption> get availabilityOptions => [
+  AvailabilityOption(
+    days: 2,
+    label: t.onboarding.availability.days2,
+  ),
+  AvailabilityOption(
+    days: 3,
+    label: t.onboarding.availability.days3,
+  ),
+  AvailabilityOption(
+    days: 4,
+    label: t.onboarding.availability.days4,
+  ),
+  AvailabilityOption(
+    days: 5,
+    label: t.onboarding.availability.days5plus,
+  ),
 ];
