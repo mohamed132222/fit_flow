@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+
+import '../../../../gen/assets.gen.dart';
 
 class SplashLogo extends StatelessWidget {
   const SplashLogo({super.key});
@@ -9,9 +10,7 @@ class SplashLogo extends StatelessWidget {
     return SizedBox(
       width: 128,
       height: 128,
-      child: Center(
-        child: SvgPicture.asset('assets/images/fitflow_logo.svg'),
-      ),
+      child: Center(child: Assets.images.fitflowLogo.svg()),
     );
   }
 }
