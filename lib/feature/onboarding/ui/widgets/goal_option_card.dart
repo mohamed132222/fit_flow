@@ -1,23 +1,22 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
+import '../../data/models/goal_option.dart';
+import '../../presentation/cubits/onboarding_selection/onboarding_selection_cubit.dart';
 import '../onboarding_labels.dart';
 import 'goal_radio_indicator.dart';
 
 class GoalOptionCard extends StatelessWidget {
   const GoalOptionCard({
     super.key,
-    required this.goalId,
-    required this.iconKey,
+    required this.goal,
     required this.isSelected,
-    required this.onTap,
   });
 
-  final String goalId;
-  final String iconKey;
+  final GoalOption goal;
   final bool isSelected;
-  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +31,8 @@ class GoalOptionCard extends StatelessWidget {
         ),
       ),
       child: InkWell(
-        onTap: onTap,
+        onTap: () =>
+            context.read<OnboardingSelectionCubit>().selectGoal(goal.id),
         child: Padding(
           padding: const EdgeInsets.all(16),
           child: Row(
@@ -46,7 +46,7 @@ class GoalOptionCard extends StatelessWidget {
                   borderRadius: BorderRadius.circular(8),
                 ),
                 child: OnboardingLabels.goalIcon(
-                  iconKey,
+                  goal.iconKey,
                 ).svg(width: 22, height: 22),
               ),
               const SizedBox(width: 16),
@@ -55,11 +55,11 @@ class GoalOptionCard extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
-                      OnboardingLabels.goalTitle(goalId),
+                      OnboardingLabels.goalTitle(goal.id),
                       style: AppStyles.font16Bold,
                     ),
                     Text(
-                      OnboardingLabels.goalDescription(goalId),
+                      OnboardingLabels.goalDescription(goal.id),
                       style: AppStyles.font13Regular,
                     ),
                   ],

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
 import '../../data/models/availability_option.dart';
+import '../../presentation/cubits/onboarding_selection/onboarding_selection_cubit.dart';
 import '../onboarding_labels.dart';
 
 class AvailabilityOptionTile extends StatelessWidget {
@@ -10,12 +12,10 @@ class AvailabilityOptionTile extends StatelessWidget {
     super.key,
     required this.option,
     required this.isSelected,
-    required this.onSelected,
   });
 
   final AvailabilityOption option;
   final bool isSelected;
-  final ValueChanged<int> onSelected;
 
   @override
   Widget build(BuildContext context) {
@@ -26,7 +26,9 @@ class AvailabilityOptionTile extends StatelessWidget {
       borderRadius: BorderRadius.circular(8),
       clipBehavior: Clip.antiAlias,
       child: InkWell(
-        onTap: () => onSelected(option.daysPerWeek),
+        onTap: () => context
+            .read<OnboardingSelectionCubit>()
+            .selectAvailability(option.id),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 12),
           child: Center(

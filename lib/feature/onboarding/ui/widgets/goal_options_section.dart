@@ -22,7 +22,6 @@ class GoalOptionsSection extends StatelessWidget {
         ),
         GetGoalsConfigSuccess(:final config) => GoalOptionsList(
           goals: config.goals,
-          initialGoalId: config.defaultGoalId,
         ),
       },
     );

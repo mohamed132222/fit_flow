@@ -2,6 +2,7 @@ import 'package:go_router/go_router.dart';
 
 import '../../feature/onboarding/ui/onboarding_screen.dart';
 import '../../feature/splash/ui/splash_screen.dart';
+import '../../feature/workout_plan/ui/workout_plan_screen.dart';
 import 'app_router_name.dart';
 
 class AppRouter {
@@ -19,6 +20,11 @@ class AppRouter {
         path: AppRouterName.onboardingPath,
         name: AppRouterName.onboarding,
         builder: (context, state) => const OnboardingScreen(),
+      ),
+      GoRoute(
+        path: AppRouterName.workoutPlanPath,
+        name: AppRouterName.workoutPlan,
+        builder: (context, state) => const WorkoutPlanScreen(),
       ),
     ],
   );

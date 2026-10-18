@@ -5,4 +5,6 @@ class AppRouterName {
   static const String splashPath = '/';
   static const String onboarding = 'onboarding';
   static const String onboardingPath = '/onboarding';
+  static const String workoutPlan = 'workoutPlan';
+  static const String workoutPlanPath = '/workout-plan';
 }

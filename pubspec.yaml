@@ -81,6 +81,8 @@ flutter:
   assets:
     - assets/images/
     - data/goals.json
+    - data/plans.json
+    - data/exercises.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

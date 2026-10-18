@@ -5,9 +5,14 @@ import '../../../../core/theme/app_styles.dart';
 import '../../../../i18n/strings.g.dart';
 
 class OnboardingBottomBar extends StatelessWidget {
-  const OnboardingBottomBar({super.key, required this.onContinue});
+  const OnboardingBottomBar({
+    super.key,
+    required this.onContinue,
+    required this.isLoading,
+  });
 
-  final VoidCallback onContinue;
+  final VoidCallback? onContinue;
+  final bool isLoading;
 
   @override
   Widget build(BuildContext context) {
@@ -29,18 +34,30 @@ class OnboardingBottomBar extends StatelessWidget {
                 backgroundColor: AppColors.primary,
                 shape: const StadiumBorder(),
               ),
-              child: Row(
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(t.onboarding.continueButton, style: AppStyles.font17Bold),
-                  const SizedBox(width: 8),
-                  const Icon(
-                    Icons.arrow_forward_rounded,
-                    color: AppColors.white,
-                    size: 20,
-                  ),
-                ],
-              ),
+              child: isLoading
+                  ? const SizedBox(
+                      width: 22,
+                      height: 22,
+                      child: CircularProgressIndicator(
+                        strokeWidth: 2.5,
+                        color: AppColors.white,
+                      ),
+                    )
+                  : Row(
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          t.onboarding.continueButton,
+                          style: AppStyles.font17Bold,
+                        ),
+                        const SizedBox(width: 8),
+                        const Icon(
+                          Icons.arrow_forward_rounded,
+                          color: AppColors.white,
+                          size: 20,
+                        ),
+                      ],
+                    ),
             ),
           ),
           const SizedBox(height: 16),

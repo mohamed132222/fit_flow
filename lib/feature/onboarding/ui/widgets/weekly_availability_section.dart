@@ -29,9 +29,6 @@ class WeeklyAvailabilitySection extends StatelessWidget {
             ),
             GetGoalsConfigSuccess(:final config) => AvailabilityOptionsList(
               options: config.availabilityOptions,
-              initialDays:
-                  config.defaultAvailability?.daysPerWeek ??
-                  config.availabilityOptions.first.daysPerWeek,
             ),
           },
         ),
