@@ -47,7 +47,8 @@
         "isRecommended": false,
         "badge": "TIME-EFFICIENT",
         "caption": "Minimum effective dose",
-        "imageKey": "banner_muscle"
+        "imageKey": "banner_muscle",
+        "imageUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -263,7 +264,8 @@
         "isRecommended": false,
         "badge": "BALANCED",
         "caption": "Great frequency for beginners",
-        "imageKey": "banner_muscle"
+        "imageKey": "banner_muscle",
+        "imageUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -540,7 +542,8 @@
         "isRecommended": true,
         "badge": "RECOMMENDED",
         "caption": "Optimal recovery cycle",
-        "imageKey": "banner_muscle"
+        "imageKey": "banner_muscle",
+        "imageUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -907,7 +910,8 @@
         "isRecommended": false,
         "badge": "ADVANCED",
         "caption": "High volume for faster progress",
-        "imageKey": "banner_muscle"
+        "imageKey": "banner_muscle",
+        "imageUrl": "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -1322,7 +1326,8 @@
         "isRecommended": false,
         "badge": "TIME-EFFICIENT",
         "caption": "Low volume, heavy focus",
-        "imageKey": "banner_strong"
+        "imageKey": "banner_strong",
+        "imageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -1519,7 +1524,8 @@
         "isRecommended": true,
         "badge": "RECOMMENDED",
         "caption": "Optimal recovery cycle",
-        "imageKey": "banner_strong"
+        "imageKey": "banner_strong",
+        "imageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -1776,7 +1782,8 @@
         "isRecommended": false,
         "badge": "HIGH VOLUME",
         "caption": "More practice on every big lift",
-        "imageKey": "banner_strong"
+        "imageKey": "banner_strong",
+        "imageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -2081,7 +2088,8 @@
         "isRecommended": false,
         "badge": "ADVANCED",
         "caption": "Max frequency for every lift",
-        "imageKey": "banner_strong"
+        "imageKey": "banner_strong",
+        "imageUrl": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -2440,7 +2448,8 @@
         "isRecommended": false,
         "badge": "TIME-EFFICIENT",
         "caption": "Easy to stick with",
-        "imageKey": "banner_fitness"
+        "imageKey": "banner_fitness",
+        "imageUrl": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -2655,7 +2664,8 @@
         "isRecommended": true,
         "badge": "RECOMMENDED",
         "caption": "Balanced strength and cardio",
-        "imageKey": "banner_fitness"
+        "imageKey": "banner_fitness",
+        "imageUrl": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -2935,7 +2945,8 @@
         "isRecommended": false,
         "badge": "HIGH VOLUME",
         "caption": "Extra conditioning work",
-        "imageKey": "banner_fitness"
+        "imageKey": "banner_fitness",
+        "imageUrl": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [
@@ -3297,7 +3308,8 @@
         "isRecommended": false,
         "badge": "ADVANCED",
         "caption": "Active lifestyle plan",
-        "imageKey": "banner_fitness"
+        "imageKey": "banner_fitness",
+        "imageUrl": "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=800&auto=format&fit=crop"
       },
       "progression": "Add 1 rep per set each week until the top of the rep range, then increase the weight by the smallest available increment and drop back to the bottom of the range. Take an easier deload week every 4th week.",
       "schedule": [

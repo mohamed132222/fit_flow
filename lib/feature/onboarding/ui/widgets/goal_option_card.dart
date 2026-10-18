@@ -2,18 +2,20 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
-import '../../data/models/goal_option.dart';
+import '../onboarding_labels.dart';
 import 'goal_radio_indicator.dart';
 
 class GoalOptionCard extends StatelessWidget {
   const GoalOptionCard({
     super.key,
-    required this.goal,
+    required this.goalId,
+    required this.iconKey,
     required this.isSelected,
     required this.onTap,
   });
 
-  final GoalOption goal;
+  final String goalId;
+  final String iconKey;
   final bool isSelected;
   final VoidCallback onTap;
 
@@ -43,15 +45,23 @@ class GoalOptionCard extends StatelessWidget {
                   color: AppColors.iconTileBackground,
                   borderRadius: BorderRadius.circular(8),
                 ),
-                child: goal.icon.svg(width: 22, height: 22),
+                child: OnboardingLabels.goalIcon(
+                  iconKey,
+                ).svg(width: 22, height: 22),
               ),
               const SizedBox(width: 16),
               Expanded(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(goal.title, style: AppStyles.font16Bold),
-                    Text(goal.description, style: AppStyles.font13Regular),
+                    Text(
+                      OnboardingLabels.goalTitle(goalId),
+                      style: AppStyles.font16Bold,
+                    ),
+                    Text(
+                      OnboardingLabels.goalDescription(goalId),
+                      style: AppStyles.font13Regular,
+                    ),
                   ],
                 ),
               ),

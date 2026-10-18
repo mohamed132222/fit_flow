@@ -2,12 +2,14 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import 'package:fit_flow/core/di/injection_container.dart';
 import 'package:fit_flow/core/localization/language_cubit.dart';
 import 'package:fit_flow/main.dart';
 
 void main() {
-  setUp(() {
+  setUp(() async {
     GoogleFonts.config.allowRuntimeFetching = false;
+    await initDependencies();
   });
 
   testWidgets('shows FitFlow splash branding', (WidgetTester tester) async {

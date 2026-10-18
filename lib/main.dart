@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+import 'core/di/injection_container.dart';
 import 'core/localization/app_language.dart';
 import 'core/localization/language_cubit.dart';
 import 'core/localization/rebuild_all_children.dart';
@@ -9,8 +10,9 @@ import 'core/router/app_router.dart';
 import 'core/theme/app_theme.dart';
 import 'i18n/strings.g.dart';
 
-void main() {
+Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await initDependencies();
   runApp(
     BlocProvider(
       create: (_) => LanguageCubit(),

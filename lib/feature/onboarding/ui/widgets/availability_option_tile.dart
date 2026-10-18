@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../../../../core/theme/app_colors.dart';
 import '../../../../core/theme/app_styles.dart';
 import '../../data/models/availability_option.dart';
+import '../onboarding_labels.dart';
 
 class AvailabilityOptionTile extends StatelessWidget {
   const AvailabilityOptionTile({
@@ -25,12 +26,12 @@ class AvailabilityOptionTile extends StatelessWidget {
       borderRadius: BorderRadius.circular(8),
       clipBehavior: Clip.antiAlias,
       child: InkWell(
-        onTap: () => onSelected(option.days),
+        onTap: () => onSelected(option.daysPerWeek),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 12),
           child: Center(
             child: Text(
-              option.label,
+              OnboardingLabels.availabilityLabel(option.id),
               style: isSelected
                   ? AppStyles.font13BoldWhite
                   : AppStyles.font13SemiBoldMuted,
